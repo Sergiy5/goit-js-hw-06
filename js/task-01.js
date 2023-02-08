@@ -1,18 +1,20 @@
-const numOfCategories = document.querySelectorAll('.item');
-console.log(`Number of categories: ${numOfCategories.length}`);
+const categories = document.querySelectorAll('.item');
+console.log(`Number of categories: ${categories.length}`);
 
 
 // Items
 
 const firstItem = document.querySelector('.item');
 // console.log(firstItem);
+// categories[0];
 
 const secondItem = firstItem.nextElementSibling;
 // console.log(secondItem);
+// categories[1];
 
 const lastItem = secondItem.nextElementSibling;
 // console.log(lastItem);
-
+// categories[2];
 
 
 const firstTitle = firstItem.querySelector('h2');
