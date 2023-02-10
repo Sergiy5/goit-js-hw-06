@@ -23,24 +23,3 @@ button {
   cursor: pointer;
 }
 
-.list-item {
-  margin: 5px;
-  list-style: none;
-  margin-left: auto;
-  margin-right: auto;
-  border: solid 2px pink;
-  background-size: cover;
-}
-
-.gallery {
-  display: flex;
-  flex-direction: column;
-  
-  background-image: radial-gradient(circle at bottom left,
-        rgba(255, 166, 0, 0.664) 10%,
-        rgb(8, 102, 114) 60%,
-        rgb(197, 70, 12) 70%);
-}
-.img-item {
-  background-size: cover;
-}

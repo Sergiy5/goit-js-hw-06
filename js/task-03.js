@@ -14,8 +14,12 @@ const images = [
 ];
 
 const galleryEl = document.querySelector('.gallery');
+galleryEl.style.display = 'flex';
+galleryEl.style.flexDirection = 'column';
+galleryEl.style.textAlign = "center";
 
-const markup = images.map((image) => `<li class="list-item"><img class = "img-item", src = ${image.url}, width="680", alt = ${image.alt}/>`).join("");
+
+const markup = images.map((image) => `<li class="list-item" style=' list-style: none'><img class = "img-item", src = ${image.url}, width="680", alt = ${image.alt}/>`).join("");
 // console.log(markup);
 
 galleryEl.insertAdjacentHTML("afterbegin", markup);
