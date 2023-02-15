@@ -10,9 +10,6 @@ function getRandomHexColor() {
     .padStart(6, 0)}`;
 };
 
-
-input.addEventListener("input", onInputChange);
-
 // Func InputLetNumber
  function onInputChange() {
 
@@ -20,11 +17,6 @@ input.addEventListener("input", onInputChange);
   //  console.log(amount);
    return amount;
 };
-
-
-
-console.log(amount);
-
 
 // Func CreateBox
 function createBoxes(amount) {
@@ -45,11 +37,11 @@ function createBoxes(amount) {
 };
 
 const appendBoxes = () => newBoxes.append(...createBoxes(amount));
-// const elementsInBox = 
 const removeBoxes = () => newBoxes.innerHTML ='';
 
+input.addEventListener("input", onInputChange);
 arrayBtns[0].addEventListener("click", appendBoxes);
 arrayBtns[1].addEventListener("click", removeBoxes);
 
-// console.log(newBoxes);
+
 
