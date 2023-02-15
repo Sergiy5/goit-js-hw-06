@@ -3,7 +3,8 @@ const output = document.querySelector('#name-output');
 
 input.addEventListener('input', onInputChange);
 
-function onInputChange(eventChange) {
-    return output.textContent = eventChange.currentTarget.value;
+function onInputChange(event) {
+    return output.textContent = event.currentTarget.value;
+    
 };
 console.log(onInputChange());
