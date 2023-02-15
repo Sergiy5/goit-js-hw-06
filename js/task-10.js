@@ -12,7 +12,7 @@ function getRandomHexColor() {
 
 // Func InputLetNumber
 function onInputChange() {
-  let number = 0;
+  let number;
     return number = input.value;
 };
 
