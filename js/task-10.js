@@ -10,13 +10,21 @@ function getRandomHexColor() {
     .padStart(6, 0)}`;
 };
 
+
+input.addEventListener("input", onInputChange);
+
 // Func InputLetNumber
-function onInputChange() {
-  let number;
-    return number = input.value;
+ function onInputChange() {
+
+ amount = input.value;
+  //  console.log(amount);
+   return amount;
 };
 
-amount = onInputChange();
+
+
+console.log(amount);
+
 
 // Func CreateBox
 function createBoxes(amount) {
@@ -26,6 +34,7 @@ function createBoxes(amount) {
   for (let i = 0; i < amount; i += 1) {
     size += 10;
     const boxEl = document.createElement("div");
+    boxEl.classList.add(".boxEl"); 
     boxEl.style.width = size + "px";
     boxEl.style.height = size + "px";
     boxEl.style.backgroundColor = getRandomHexColor();
@@ -36,12 +45,11 @@ function createBoxes(amount) {
 };
 
 const appendBoxes = () => newBoxes.append(...createBoxes(amount));
-const removeBoxes = () => newBoxes.remove();
+// const elementsInBox = 
+const removeBoxes = () => newBoxes.innerHTML ='';
 
-// Input
-input.addEventListener('input', onInputChange);
 arrayBtns[0].addEventListener("click", appendBoxes);
 arrayBtns[1].addEventListener("click", removeBoxes);
 
-
+// console.log(newBoxes);
 
