@@ -1,38 +1,12 @@
 const categories = document.querySelectorAll(".item");
-// const namesCategories = document.querySelectorAll('h2');
 
 console.log(`Number of categories: ${categories.length}`);
-// console.log(numberOfCategories);
-// Items
 
-const firstItem = document.querySelector(".item");
-// console.log(firstItem);
-// categories[0];
+for (let i = 0; i < categories.length; i += 1) {
 
-const secondItem = firstItem.nextElementSibling;
-// console.log(secondItem);
-// categories[1];
+    console.log(`Category: ${categories[i].firstElementChild.textContent}`);
 
-const lastItem = secondItem.nextElementSibling;
-// console.log(lastItem);
-// categories[2];
-
-
-
-const firstTitle = firstItem.querySelector("h2");
-console.log(`Category: ${firstTitle.textContent}`);
-
-const countOfFirstEl = firstItem.querySelectorAll("li");
-console.log(`Elements: ${countOfFirstEl.length}`);
-
-const secondTitle = secondItem.querySelector("h2");
-console.log(`Category: ${firstTitle.textContent}`);
-
-const countOfSecondEl = secondItem.querySelectorAll("li");
-console.log(`Elements: ${countOfSecondEl.length}`);
-
-const lastTitle = lastItem.querySelector("h2");
-console.log(`Category: ${firstTitle.textContent}`);
-
-const countOfLastEl = lastItem.querySelectorAll("li");
-console.log(`Elements: ${countOfLastEl.length}`);
+    const arrLength = categories[i].lastElementChild;
+    
+    console.log(`Elements: ${arrLength.querySelectorAll('li').length}`);
+};

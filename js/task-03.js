@@ -19,9 +19,9 @@ galleryEl.style.flexDirection = 'column';
 galleryEl.style.textAlign = "center";
 
 
-const markup = images.map((image) => `<li class="list-item" style=' list-style: none'><img class = "img-item", src = ${image.url}, width="680", alt = ${image.alt}/>`).join("");
-// console.log(markup);
+const markup = images.map((image) => `<li class="list-item" style='list-style: none'><img class = "img-item", src = ${image.url}, width="680", alt = ${image.alt}/>`).join("");
+
 
 galleryEl.insertAdjacentHTML("afterbegin", markup);
-console.log(galleryEl);
+
 

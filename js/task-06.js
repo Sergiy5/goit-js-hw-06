@@ -1,6 +1,5 @@
 const refs = {
   inputEl: document.querySelector("#validation-input"),
-
 };
 
 refs.inputEl.addEventListener("blur", checkInput);
@@ -16,7 +15,7 @@ function checkInput(event) {
         refs.inputEl.classList.remove("invalid");
     }
     
-    else if (inputVal.length === 0) {
+    else if (inputVal === '') {
            
         refs.inputEl.classList.remove("valid");
         refs.inputEl.classList.remove("invalid"); 

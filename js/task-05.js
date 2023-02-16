@@ -3,8 +3,9 @@ const output = document.querySelector('#name-output');
 
 input.addEventListener('input', onInputChange);
 
-function onInputChange(event) {
-    return output.textContent = event.currentTarget.value;
-    
+function onInputChange() {
+        
+    return input.value.length == 0
+      ? (output.textContent = "Anonimus")
+      : (output.textContent = input.value);
 };
-console.log(onInputChange());
